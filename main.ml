@@ -1613,7 +1613,7 @@ let optentry mode _ key =
 
   | Keys.Ascii 'i' ->
      conf.icase <- not conf.icase;
-     TEdone ("case insensitive search " ^ (onoffs conf.icase))
+     TEdone ("case sensitive search " ^ (onoffs (not conf.icase)))
 
   | Keys.Ascii 'v' ->
      conf.verbose <- not conf.verbose;
